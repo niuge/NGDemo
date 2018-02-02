@@ -1,0 +1,100 @@
+status = info
+name = PropertiesConfig
+
+property.filename = target/rolling/rollingtest.log
+
+filters = threshold
+
+filter.threshold.type = ThresholdFilter
+filter.threshold.level = debug
+
+appenders =serviceMethod,serverInfo,dayActivity,searchAnswerKeyword,searchAnswerBarcode
+
+appender.serviceMethod.type = RollingFile
+appender.serviceMethod.name = serviceMethod
+appender.serviceMethod.fileName = /alidata/logs/service/serviceMethod.log
+appender.serviceMethod.filePattern = /alidata/logs/service/serviceMethod_%d{yyyy-MM-dd}_%i.log
+appender.serviceMethod.layout.type = PatternLayout
+appender.serviceMethod.layout.pattern = %-d{yyyy-MM-dd HH:mm:ss} [ %p ] [ %c ] %m%n
+appender.serviceMethod.policies.type = Policies
+appender.serviceMethod.policies.time.type = TimeBasedTriggeringPolicy
+appender.serviceMethod.policies.time.interval = 1
+appender.serviceMethod.policies.time.modulate = true
+appender.serviceMethod.policies.size.type = SizeBasedTriggeringPolicy
+appender.serviceMethod.policies.size.size=20M
+appender.serviceMethod.strategy.type = DefaultRolloverStrategy
+appender.serviceMethod.strategy.max = 100
+
+appender.serverInfo.type = RollingFile
+appender.serverInfo.name = serverInfo
+appender.serverInfo.fileName = /alidata/logs/server/serverInfo.log
+appender.serverInfo.filePattern = /alidata/logs/server/serverInfo_%d{yyyy-MM-dd}_%i.log
+appender.serverInfo.layout.type = PatternLayout
+appender.serverInfo.layout.pattern = %-d{yyyy-MM-dd HH:mm:ss} [ %p ] [ %c ] %m%n
+appender.serverInfo.policies.type = Policies
+appender.serverInfo.policies.time.type = TimeBasedTriggeringPolicy
+appender.serverInfo.policies.time.interval = 1
+appender.serverInfo.policies.time.modulate = true
+appender.serverInfo.policies.size.type = SizeBasedTriggeringPolicy
+appender.serverInfo.policies.size.size=20M
+appender.serverInfo.strategy.type = DefaultRolloverStrategy
+appender.serverInfo.strategy.max = 100
+
+appender.dayActivity.type = RollingFile
+appender.dayActivity.name = dayActivity
+appender.dayActivity.fileName = /alidata/logs/dayActivity/dayActivity.log
+appender.dayActivity.filePattern = /alidata/logs/dayActivity/dayActivity_%d{yyyy-MM-dd}_%i.log
+appender.dayActivity.layout.type = PatternLayout
+appender.dayActivity.layout.pattern = %-d{yyyy-MM-dd HH:mm:ss} [ %p ] [ %c ] %m%n
+appender.dayActivity.policies.type = Policies
+appender.dayActivity.policies.time.type = TimeBasedTriggeringPolicy
+appender.dayActivity.policies.time.interval = 1
+appender.dayActivity.policies.time.modulate = true
+appender.dayActivity.policies.size.type = SizeBasedTriggeringPolicy
+appender.dayActivity.policies.size.size=20M
+appender.dayActivity.strategy.type = DefaultRolloverStrategy
+appender.dayActivity.strategy.max = 100
+
+appender.searchAnswerKeyword.type = RollingFile
+appender.searchAnswerKeyword.name = searchAnswerKeyword
+appender.searchAnswerKeyword.fileName = /alidata/logs/search/answer/keyword.log
+appender.searchAnswerKeyword.filePattern = /alidata/logs/search/answer/keyword_%d{yyyy-MM-dd}_%i.log
+appender.searchAnswerKeyword.layout.type = PatternLayout
+appender.searchAnswerKeyword.layout.pattern = %-d{yyyy-MM-dd HH:mm:ss} [ %p ] [ %c ] %m%n
+appender.searchAnswerKeyword.policies.type = Policies
+appender.searchAnswerKeyword.policies.time.type = TimeBasedTriggeringPolicy
+appender.searchAnswerKeyword.policies.time.interval = 1
+appender.searchAnswerKeyword.policies.time.modulate = true
+appender.searchAnswerKeyword.policies.size.type = SizeBasedTriggeringPolicy
+appender.searchAnswerKeyword.policies.size.size=20M
+appender.searchAnswerKeyword.strategy.type = DefaultRolloverStrategy
+appender.searchAnswerKeyword.strategy.max = 100
+
+appender.searchAnswerBarcode.type = RollingFile
+appender.searchAnswerBarcode.name = searchAnswerBarcode
+appender.searchAnswerBarcode.fileName = /alidata/logs/search/answer/barcode.log
+appender.searchAnswerBarcode.filePattern = /alidata/logs/search/answer/barcode_%d{yyyy-MM-dd}_%i.log
+appender.searchAnswerBarcode.layout.type = PatternLayout
+appender.searchAnswerBarcode.layout.pattern = %-d{yyyy-MM-dd HH:mm:ss} [ %p ] [ %c ] %m%n
+appender.searchAnswerBarcode.policies.type = Policies
+appender.searchAnswerBarcode.policies.time.type = TimeBasedTriggeringPolicy
+appender.searchAnswerBarcode.policies.time.interval = 1
+appender.searchAnswerBarcode.policies.time.modulate = true
+appender.searchAnswerBarcode.policies.size.type = SizeBasedTriggeringPolicy
+appender.searchAnswerBarcode.policies.size.size=20M
+appender.searchAnswerBarcode.strategy.type = DefaultRolloverStrategy
+appender.searchAnswerBarcode.strategy.max = 100
+
+asycnLogger.level = info
+asycnLogger.appenderRefs =serviceMethod,serverInfo,dayActivity,searchAnswerKeyword,searchAnswerBarcode
+#rootLogger.appenderRef.stdout.ref = STDOUT
+asycnLogger.appenderRef.serviceMethod.ref = serviceMethod
+asycnLogger.appenderRef.serviceMethod.level = info
+asycnLogger.appenderRef.serverInfo.ref = serverInfo
+asycnLogger.appenderRef.serverInfo.level = info
+asycnLogger.appenderRef.dayActivity.ref = dayActivity
+asycnLogger.appenderRef.dayActivity.level = info
+asycnLogger.appenderRef.searchAnswerKeyword.ref = searchAnswerKeyword
+asycnLogger.appenderRef.searchAnswerKeyword.level = info
+asycnLogger.appenderRef.searchAnswerBarcode.ref = searchAnswerBarcode
+asycnLogger.appenderRef.searchAnswerBarcode.level = info

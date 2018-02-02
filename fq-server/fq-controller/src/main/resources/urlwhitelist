@@ -1,0 +1,16 @@
+/hd-server/exampaper/getExampaperBaseInfoById.do
+/hd-server/appVersion/getAppVersion.do
+/hd-server/h5/getCommData.do
+/hd-server/h5/searchBook.do
+/hd-server/h5/getBookListByUser.do
+/hd-server/h5/concernBook.do
+/hd-server/h5/unConcernBook.do
+/hd-server/h5/getBookInfo.do
+/hd-server/h5/getStanAnswerByChapter.do
+/hd-server/h5/getUserInfo.do
+/hd-server/h5/getOfferAnswer.do
+/hd-server/h5/getOfferAnswerProvinceList.do
+/hd-server/pc/getCommData.do
+/hd-server/pc/searchBook.do
+/hd-server/pc/getBookInfo.do
+/hd-server/pc/getRecommendBookList.do

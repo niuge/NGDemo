@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group>
+        <property name="kafka.servers" description="" defaultValue="" />
+		<property name="db_vzy2014_url" description="" defaultValue="" />
+		<property name="db_blog_url" description="" defaultValue="" />
+		<property name="db_relax_url" description="" defaultValue="" />
+        <property name="db_write_url" description="" defaultValue="" />
+        <property name="db_write_user" description="" defaultValue="" />
+        <property name="db_write_password" description="" defaultValue="" />
+        <property name="db_read_url" description="" defaultValue="" />
+        <property name="db_read_user" description="" defaultValue="" />
+        <property name="db_read_password" description="" defaultValue="" />
+        <property name="db_web_url" description="" defaultValue="" />
+        <property name="db_web_user" description="" defaultValue="" />
+        <property name="db_web_password" description="" defaultValue="" />
+
+        <property name="redis_url" description="" defaultValue="" />
+        <property name="redis_port" description="" defaultValue="" />
+        <property name="redis_password" description="" defaultValue="" />
+        <property name="redis_max_total" description="" defaultValue="" />
+        <property name="redis_max_idle" description="" defaultValue="" />
+        <property name="redis_test_on_borrow" description="" defaultValue="" />
+        <property name="redis_test_on_return" description="" defaultValue="" />
+
+        <property name="es_ip1" description="" defaultValue="" />
+        <property name="es_ip2" description="" defaultValue="" />
+        <property name="es_ip3" description="" defaultValue="" />
+        <property name="es_ip4" description="" defaultValue="" />
+        <property name="es_port" description="" defaultValue="" />
+        <property name="es_cluster_name" description="" defaultValue="" />
+
+        <property name="internet_cardname" description="" defaultValue="" />
+        <property name="dubbo_host" description="" defaultValue="" />
+        <property name="dubbo_port" description="" defaultValue="" />
+        <property name="dubbo_protocol" description="" defaultValue="" />
+        <property name="dubbo_registry_url" description="" defaultValue="" />
+
+        <property name="auth_control" description="" defaultValue="false" />
+
+        <property name="oss_endpoint" description="" defaultValue="http://oss-cn-hangzhou.aliyuncs.com" />
+        
+        <property name="integral_push_switch" description="" defaultValue="false" />
+        
+        <property name="server_host"  description="" defaultValue=""></property>
+        
+        <property name="email_account"  description="" defaultValue=""></property>
+        
+        <property name="email_password"  description="" defaultValue=""></property>
+        
+        <property name="email_smtp_host"  description="" defaultValue=""></property>
+
+        <property name="new_integral_task_control"  description="" defaultValue=""></property>
+
+        <property name="new_integral_push_switch"  description="" defaultValue=""></property>
+
+        <property name="mq_hd_integral_log"  description="" defaultValue=""></property>
+        <property name="school_ranking_message"  description="" defaultValue=""></property>
+
+        <property name="hbase.zookeeper.quorum"  description="" defaultValue=""></property>
+        <property name="hbase.zookeeper.property.clientPort"  description="" defaultValue=""></property>
+        <property name="integral_switch"  description="" defaultValue=""></property>
+        
+        <property name="nos_addr"  description="" defaultValue=""></property>
+        
+        <property name="p_id"  description="" defaultValue=""></property>
+        
+        <property name="c_id"  description="" defaultValue=""></property>
+        <property name="onsaddr"  description="" defaultValue=""></property>
+		<property name="mq_hd_recommend"  description="" defaultValue=""></property>
+        <property name="p_recommend_id"  description="" defaultValue=""></property>
+        
+        <property name="c_recommend_id"  description="" defaultValue=""></property> 
+    </group>
+    <script>
+        <generate template="config.vm" destfile="WEB-INF/classes/config.properties" charset="UTF-8"/>
+    </script>
+</config>

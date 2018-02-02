@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="fq-controller-1.0.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="fq-service-facades-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-service-facades/fq-service-facades">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fq-dao-facades-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-dao-facades/fq-dao-facades">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fq-dao-base-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-dao-base/fq-dao-base">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fq-dao-model-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-dao-model/fq-dao-model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fq-service-impl-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-service-impl/fq-service-impl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fq-service-vo-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-service-vo/fq-service-vo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fq-common-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-common/fq-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fq-util-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fq-util/fq-util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="fq-controller"/>
+        <property name="java-output-path" value="/fq-controller/target/classes"/>
+    </wb-module>
+</project-modules>
